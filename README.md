@@ -18,8 +18,7 @@ Load the script
 ```html
 <script src="backbone.shortcuts.min.js"></script>
 ```
-Just define a new event with the sintax below,
-just note that he modifiers must comply with their priority (`Ctrl`, `Alt`, `Shift`):
+Just define a new event with the sintax below. Note that the modifiers must comply with their priority (`Ctrl`, `Alt`, `Shift`)
 
 ```javascript
 var aView = Backbone.View.extend({
