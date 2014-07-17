@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html dir="ltr">
+	<head></head>
+	<body>
+		<div id="contents"></div>
+	</body>
+    <script type="text/javascript" src="https://github.com/douglascrockford/JSON-js/blob/master/json2.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="http://underscorejs.org/underscore-min.js"></script>
+    <script type="text/javascript" src="http://backbonejs.org/backbone-min.js"></script>
+	<script type="text/javascript" src="backbone.shortcuts.js"></script>
+	<script type="text/javascript">
+        var v = Backbone.View.extend({
+            el : "#contents",
+            events : {
+                "onCtrlAltE" : function(){
+                    alert("Ctrl + Alt + E");
+                },
+                "onAltO" : function(){
+                    alert("Alt + O");
+                },
+                "onF5" : function(){
+                    alert("F5");
+                },
+                "onAltShiftR" : function(){
+                    alert("Alt + Shift + R");
+                }
+            }
+        });
+        var theView = new v();
+    </script>
+</html>
